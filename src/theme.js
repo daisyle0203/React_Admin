@@ -1,6 +1,5 @@
 import { createContext, useState, useMemo } from "react"
 import { createTheme } from "@mui/material/styles"
-import { co } from "@fullcalendar/core/internal-common"
 
 // color design tokens
 export const tokens = (mode) => ({
