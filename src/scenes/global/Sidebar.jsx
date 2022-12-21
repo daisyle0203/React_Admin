@@ -46,6 +46,7 @@ const Sidebar = () => {
     >
       <ProSidebar collapsed={isCollapsed}>
         <Menu iconShape="square">
+
           {/* LOGO AND MENU ICON */}
           <MenuItem
             onClick={() => setIsCollapsed(!isCollapsed)}
@@ -71,6 +72,35 @@ const Sidebar = () => {
               </Box>
             )}
           </MenuItem>
+
+          {/* USER IMAGE AND TITLE */}
+          {!isCollapsed && (
+            <Box mb="25px">
+              <Box display="flex" justifyContent="center" alignItems="center">
+                <img
+                  alt="profile-user"
+                  width="100px"
+                  height="100px"
+                  src={`../../assets/user.png`}
+                  style={{ cursor: "pointer", borderRadius: "50%" }}
+                />
+              </Box>
+              <Box textAlign="center">
+                <Typography
+                  variant="h2"
+                  color={colors.grey[100]}
+                  fontWeight="bold"
+                  sx={{ m: "10px 0 0 0" }}
+                >
+                  Daisy Le
+                </Typography>
+                <Typography variant="h5" color={colors.greenAccent[500]}>
+                  VP Admin
+                </Typography>
+              </Box>
+            </Box>
+          )}
+
         </Menu>
       </ProSidebar>
     </Box>
