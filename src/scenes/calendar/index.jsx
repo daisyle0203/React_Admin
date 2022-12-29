@@ -112,12 +112,12 @@ const Calendar = () => {
             eventsSet={(events) => setCurrentEvents(events)}
             initialEvents={[
               {
-                id: "12315",
+                id: "1234",
                 title: "All-day event",
                 date: "2022-12-28",
               },
               {
-                id: "5123",
+                id: "4321",
                 title: "Timed event",
                 date: "2022-12-29",
               },
